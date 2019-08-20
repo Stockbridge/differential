@@ -12,8 +12,31 @@ Explorative Repo for Browser Game Tools/Techniques
 
 All that should be needed is an npm install and a run of gulp (to generate dist folder) once cloned for this to be up and running locally.
 
-# gulp commands
-```
-default - runs dev compile. unminified with a watch function.
-build   - runs production compile. minified. 
-```
+## Usage
+**Development**
+
+`npm run start-dev`
+
+* Build app continuously (HMR enabled)
+* App served @ `http://localhost:8080`
+
+**Production**
+
+`npm run start-prod`
+
+* Build app once (HMR disabled) to `/dist/`
+* App served @ `http://localhost:3000`
+
+---
+
+**All commands**
+
+Command | Description
+--- | ---
+`npm run start-dev` | Build app continuously (HMR enabled) and serve @ `http://localhost:8080`
+`npm run start-prod` | Build app once (HMR disabled) to `/dist/` and serve @ `http://localhost:3000`
+`npm run build` | Build app to `/dist/`
+`npm run test` | Run tests
+`npm run lint` | Run Typescript linter
+`npm run lint --fix` | Run Typescript linter and fix issues
+`npm run start` | (alias of `npm run start-dev`)

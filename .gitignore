@@ -1,10 +1,6 @@
-# Compiled Folder Directory
-dist/*/*
-
-# Dependency directory
-/node_modules
-npm-debug.log
-
-# Sublime Files
-*.sublime-project
-*.sublime-workspace
+.idea/
+dist/
+node_modules/
+src/**/*.jsx
+tests/__coverage__/
+tests/**/*.jsx
